@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox Name="CommandLineBox" AcceptsReturn="True"
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"
+                 VerticalContentAlignment="Top"
+                 FontFamily="Lucida Console"
+                 FontSize="14"
+                 MaxLength="640000"
+                 Loaded="CommandLineBox_OnLoaded"
+                 PreviewKeyDown="CommandLineBox_PreviewKeyDown"
+                 ></TextBox>
     </Grid>
 </Window>
